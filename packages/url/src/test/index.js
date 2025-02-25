@@ -898,7 +898,7 @@ describe( 'removeQueryArgs', () => {
 		);
 	} );
 
-	it( 'should no remove what looks like a query arg after url fragment', () => {
+	it( 'should not remove what looks like a query arg after url fragment', () => {
 		const url = 'https://andalouses.example/beach#fragment?foo=bar';
 
 		expect( removeQueryArgs( url, 'foo' ) ).toEqual(
